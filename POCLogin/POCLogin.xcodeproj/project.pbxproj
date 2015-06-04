@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		071911DC1B20450A0091A9B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071911DB1B20450A0091A9B7 /* AppDelegate.swift */; };
+		071911DE1B20450A0091A9B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071911DD1B20450A0091A9B7 /* ViewController.swift */; };
+		071911E11B20450A0091A9B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071911DF1B20450A0091A9B7 /* Main.storyboard */; };
+		071911E31B20450A0091A9B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071911E21B20450A0091A9B7 /* Images.xcassets */; };
+		071911E61B20450A0091A9B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071911E41B20450A0091A9B7 /* LaunchScreen.xib */; };
+		071911F21B20450A0091A9B7 /* POCLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071911F11B20450A0091A9B7 /* POCLoginTests.swift */; };
+		071912251B205C460091A9B7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071912241B205C460091A9B7 /* RegisterViewController.swift */; };
+		071912441B20829C0091A9B7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0719123D1B20828F0091A9B7 /* Alamofire.framework */; };
+		071912451B20829C0091A9B7 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0719123D1B20828F0091A9B7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		071912481B2082A30091A9B7 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0719122E1B2082840091A9B7 /* SwiftyJSON.framework */; };
+		071912491B2082A30091A9B7 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0719122E1B2082840091A9B7 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		071911EC1B20450A0091A9B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071911CE1B20450A0091A9B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 071911D51B20450A0091A9B7;
+			remoteInfo = POCLogin;
+		};
+		0719122D1B2082840091A9B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071912261B2082840091A9B7 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		0719122F1B2082840091A9B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071912261B2082840091A9B7 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFE619575BE100351305;
+			remoteInfo = "SwiftyJSON iOS Tests";
+		};
+		071912311B2082840091A9B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071912261B2082840091A9B7 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC5B1A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX";
+		};
+		071912331B2082840091A9B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071912261B2082840091A9B7 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC651A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX Tests";
+		};
+		0719123C1B20828F0091A9B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071912351B20828F0091A9B7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		0719123E1B20828F0091A9B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071912351B20828F0091A9B7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		071912401B20828F0091A9B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071912351B20828F0091A9B7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		071912421B20828F0091A9B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071912351B20828F0091A9B7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		071912461B20829C0091A9B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071912351B20828F0091A9B7 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		0719124A1B2082A30091A9B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071912261B2082840091A9B7 /* SwiftyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0719120E1B2045B90091A9B7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				071912491B2082A30091A9B7 /* SwiftyJSON.framework in Embed Frameworks */,
+				071912451B20829C0091A9B7 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		071911D61B20450A0091A9B7 /* POCLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POCLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		071911DA1B20450A0091A9B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071911DB1B20450A0091A9B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		071911DD1B20450A0091A9B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		071911E01B20450A0091A9B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		071911E21B20450A0091A9B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		071911E51B20450A0091A9B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		071911EB1B20450A0091A9B7 /* POCLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POCLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		071911F01B20450A0091A9B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071911F11B20450A0091A9B7 /* POCLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POCLoginTests.swift; sourceTree = "<group>"; };
+		071912241B205C460091A9B7 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		071912261B2082840091A9B7 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
+		071912351B20828F0091A9B7 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../Alamofire-master 3/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		071911D31B20450A0091A9B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071912481B2082A30091A9B7 /* SwiftyJSON.framework in Frameworks */,
+				071912441B20829C0091A9B7 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071911E81B20450A0091A9B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		071911CD1B20450A0091A9B7 = {
+			isa = PBXGroup;
+			children = (
+				071912351B20828F0091A9B7 /* Alamofire.xcodeproj */,
+				071912261B2082840091A9B7 /* SwiftyJSON.xcodeproj */,
+				071911D81B20450A0091A9B7 /* POCLogin */,
+				071911EE1B20450A0091A9B7 /* POCLoginTests */,
+				071911D71B20450A0091A9B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		071911D71B20450A0091A9B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				071911D61B20450A0091A9B7 /* POCLogin.app */,
+				071911EB1B20450A0091A9B7 /* POCLoginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		071911D81B20450A0091A9B7 /* POCLogin */ = {
+			isa = PBXGroup;
+			children = (
+				071911DB1B20450A0091A9B7 /* AppDelegate.swift */,
+				071911DD1B20450A0091A9B7 /* ViewController.swift */,
+				071911DF1B20450A0091A9B7 /* Main.storyboard */,
+				071911E21B20450A0091A9B7 /* Images.xcassets */,
+				071911E41B20450A0091A9B7 /* LaunchScreen.xib */,
+				071911D91B20450A0091A9B7 /* Supporting Files */,
+				071912241B205C460091A9B7 /* RegisterViewController.swift */,
+			);
+			path = POCLogin;
+			sourceTree = "<group>";
+		};
+		071911D91B20450A0091A9B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				071911DA1B20450A0091A9B7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		071911EE1B20450A0091A9B7 /* POCLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				071911F11B20450A0091A9B7 /* POCLoginTests.swift */,
+				071911EF1B20450A0091A9B7 /* Supporting Files */,
+			);
+			path = POCLoginTests;
+			sourceTree = "<group>";
+		};
+		071911EF1B20450A0091A9B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				071911F01B20450A0091A9B7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		071912271B2082840091A9B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0719122E1B2082840091A9B7 /* SwiftyJSON.framework */,
+				071912301B2082840091A9B7 /* SwiftyJSON iOS Tests.xctest */,
+				071912321B2082840091A9B7 /* SwiftyJSON.framework */,
+				071912341B2082840091A9B7 /* SwiftyJSON OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		071912361B20828F0091A9B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0719123D1B20828F0091A9B7 /* Alamofire.framework */,
+				0719123F1B20828F0091A9B7 /* Alamofire.framework */,
+				071912411B20828F0091A9B7 /* Alamofire iOS Tests.xctest */,
+				071912431B20828F0091A9B7 /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		071911D51B20450A0091A9B7 /* POCLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071911F51B20450A0091A9B7 /* Build configuration list for PBXNativeTarget "POCLogin" */;
+			buildPhases = (
+				071911D21B20450A0091A9B7 /* Sources */,
+				071911D31B20450A0091A9B7 /* Frameworks */,
+				071911D41B20450A0091A9B7 /* Resources */,
+				0719120E1B2045B90091A9B7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				071912471B20829C0091A9B7 /* PBXTargetDependency */,
+				0719124B1B2082A30091A9B7 /* PBXTargetDependency */,
+			);
+			name = POCLogin;
+			productName = POCLogin;
+			productReference = 071911D61B20450A0091A9B7 /* POCLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		071911EA1B20450A0091A9B7 /* POCLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071911F81B20450A0091A9B7 /* Build configuration list for PBXNativeTarget "POCLoginTests" */;
+			buildPhases = (
+				071911E71B20450A0091A9B7 /* Sources */,
+				071911E81B20450A0091A9B7 /* Frameworks */,
+				071911E91B20450A0091A9B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				071911ED1B20450A0091A9B7 /* PBXTargetDependency */,
+			);
+			name = POCLoginTests;
+			productName = POCLoginTests;
+			productReference = 071911EB1B20450A0091A9B7 /* POCLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		071911CE1B20450A0091A9B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Fontys;
+				TargetAttributes = {
+					071911D51B20450A0091A9B7 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = UWTAA8VL2P;
+					};
+					071911EA1B20450A0091A9B7 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 071911D51B20450A0091A9B7;
+					};
+				};
+			};
+			buildConfigurationList = 071911D11B20450A0091A9B7 /* Build configuration list for PBXProject "POCLogin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 071911CD1B20450A0091A9B7;
+			productRefGroup = 071911D71B20450A0091A9B7 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 071912361B20828F0091A9B7 /* Products */;
+					ProjectRef = 071912351B20828F0091A9B7 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 071912271B2082840091A9B7 /* Products */;
+					ProjectRef = 071912261B2082840091A9B7 /* SwiftyJSON.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				071911D51B20450A0091A9B7 /* POCLogin */,
+				071911EA1B20450A0091A9B7 /* POCLoginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0719122E1B2082840091A9B7 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 0719122D1B2082840091A9B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		071912301B2082840091A9B7 /* SwiftyJSON iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON iOS Tests.xctest";
+			remoteRef = 0719122F1B2082840091A9B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		071912321B2082840091A9B7 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 071912311B2082840091A9B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		071912341B2082840091A9B7 /* SwiftyJSON OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON OSX Tests.xctest";
+			remoteRef = 071912331B2082840091A9B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0719123D1B20828F0091A9B7 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 0719123C1B20828F0091A9B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0719123F1B20828F0091A9B7 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 0719123E1B20828F0091A9B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		071912411B20828F0091A9B7 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 071912401B20828F0091A9B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		071912431B20828F0091A9B7 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 071912421B20828F0091A9B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		071911D41B20450A0091A9B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071911E11B20450A0091A9B7 /* Main.storyboard in Resources */,
+				071911E61B20450A0091A9B7 /* LaunchScreen.xib in Resources */,
+				071911E31B20450A0091A9B7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071911E91B20450A0091A9B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		071911D21B20450A0091A9B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071912251B205C460091A9B7 /* RegisterViewController.swift in Sources */,
+				071911DE1B20450A0091A9B7 /* ViewController.swift in Sources */,
+				071911DC1B20450A0091A9B7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071911E71B20450A0091A9B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071911F21B20450A0091A9B7 /* POCLoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		071911ED1B20450A0091A9B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 071911D51B20450A0091A9B7 /* POCLogin */;
+			targetProxy = 071911EC1B20450A0091A9B7 /* PBXContainerItemProxy */;
+		};
+		071912471B20829C0091A9B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 071912461B20829C0091A9B7 /* PBXContainerItemProxy */;
+		};
+		0719124B1B2082A30091A9B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyJSON iOS";
+			targetProxy = 0719124A1B2082A30091A9B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		071911DF1B20450A0091A9B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				071911E01B20450A0091A9B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		071911E41B20450A0091A9B7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				071911E51B20450A0091A9B7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		071911F31B20450A0091A9B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		071911F41B20450A0091A9B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		071911F61B20450A0091A9B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = POCLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		071911F71B20450A0091A9B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = POCLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		071911F91B20450A0091A9B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = POCLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/POCLogin.app/POCLogin";
+			};
+			name = Debug;
+		};
+		071911FA1B20450A0091A9B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = POCLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/POCLogin.app/POCLogin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		071911D11B20450A0091A9B7 /* Build configuration list for PBXProject "POCLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071911F31B20450A0091A9B7 /* Debug */,
+				071911F41B20450A0091A9B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071911F51B20450A0091A9B7 /* Build configuration list for PBXNativeTarget "POCLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071911F61B20450A0091A9B7 /* Debug */,
+				071911F71B20450A0091A9B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		071911F81B20450A0091A9B7 /* Build configuration list for PBXNativeTarget "POCLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071911F91B20450A0091A9B7 /* Debug */,
+				071911FA1B20450A0091A9B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 071911CE1B20450A0091A9B7 /* Project object */;
+}
