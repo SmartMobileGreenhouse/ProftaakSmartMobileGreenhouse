@@ -15,7 +15,7 @@ class CrumbleDetailViewController: UIViewController {
     @IBOutlet var lblTitle: UILabel!
     
     @IBOutlet var lblAuthor: UILabel!
-
+    
     @IBOutlet var lblDate: UILabel!
     @IBOutlet var textView: UITextView!
     @IBOutlet var imageView: UIImageView!
@@ -25,7 +25,7 @@ class CrumbleDetailViewController: UIViewController {
         lblTitle.text = crumble?.title
         lblAuthor.text = crumble?.author
         lblDate.text = crumble?.date
-        
+        navigationController?.navigationBar.barTintColor = UIColor(red: 224/255, green: 172/255, blue: 37/255, alpha: 1)
         if(crumble?.imagePath != "")
         {
             //Load image

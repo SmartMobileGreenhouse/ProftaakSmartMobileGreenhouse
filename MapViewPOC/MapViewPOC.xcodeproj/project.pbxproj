@@ -25,6 +25,9 @@
 		079697FD1B32D412009CD395 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079697F61B32D40C009CD395 /* SwiftyJSON.framework */; };
 		079697FE1B32D412009CD395 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 079697F61B32D40C009CD395 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		079698061B32F526009CD395 /* CrumbleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079698051B32F526009CD395 /* CrumbleAnnotation.swift */; };
+		07F0FF241B33B07500533E86 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0FF231B33B07500533E86 /* TabBarController.swift */; };
+		07F0FF2E1B33B19E00533E86 /* map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07F0FF2D1B33B19E00533E86 /* map@2x.png */; };
+		07F0FF301B33B2B900533E86 /* launchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07F0FF2F1B33B2B900533E86 /* launchImage@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,7 +137,7 @@
 		0732263C1B33A2F000DFD8C3 /* forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward@2x.png"; sourceTree = "<group>"; };
 		073226441B33A4AE00DFD8C3 /* CrumbleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrumbleDetailViewController.swift; sourceTree = "<group>"; };
 		073929671B32D15400AB829B /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../Alamofire-master 3/Alamofire.xcodeproj"; sourceTree = "<group>"; };
-		076C89B31B32A66A0012E15D /* MapViewPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapViewPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		076C89B31B32A66A0012E15D /* Crumble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crumble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		076C89B71B32A66A0012E15D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		076C89B81B32A66A0012E15D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		076C89BA1B32A66A0012E15D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +153,9 @@
 		076C89E01B32CFB40012E15D /* AddCrumbleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCrumbleTableViewController.swift; sourceTree = "<group>"; };
 		079697EE1B32D40C009CD395 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
 		079698051B32F526009CD395 /* CrumbleAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrumbleAnnotation.swift; sourceTree = "<group>"; };
+		07F0FF231B33B07500533E86 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		07F0FF2D1B33B19E00533E86 /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map@2x.png"; sourceTree = "<group>"; };
+		07F0FF2F1B33B2B900533E86 /* launchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,7 +207,7 @@
 		076C89B41B32A66A0012E15D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				076C89B31B32A66A0012E15D /* MapViewPOC.app */,
+				076C89B31B32A66A0012E15D /* Crumble.app */,
 				076C89C81B32A66A0012E15D /* MapViewPOCTests.xctest */,
 			);
 			name = Products;
@@ -215,13 +221,16 @@
 				076C89BC1B32A66A0012E15D /* Main.storyboard */,
 				076C89DC1B32C1FE0012E15D /* CurrentLocation@2x.png */,
 				0732263C1B33A2F000DFD8C3 /* forward@2x.png */,
+				07F0FF2D1B33B19E00533E86 /* map@2x.png */,
 				076C89BF1B32A66A0012E15D /* Images.xcassets */,
+				07F0FF2F1B33B2B900533E86 /* launchImage@2x.png */,
 				0705CFB81B339A8100A71559 /* placeholder@2x.png */,
 				076C89C11B32A66A0012E15D /* LaunchScreen.xib */,
 				076C89B61B32A66A0012E15D /* Supporting Files */,
 				076C89E01B32CFB40012E15D /* AddCrumbleTableViewController.swift */,
 				079698051B32F526009CD395 /* CrumbleAnnotation.swift */,
 				073226441B33A4AE00DFD8C3 /* CrumbleDetailViewController.swift */,
+				07F0FF231B33B07500533E86 /* TabBarController.swift */,
 			);
 			path = MapViewPOC;
 			sourceTree = "<group>";
@@ -283,7 +292,7 @@
 			);
 			name = MapViewPOC;
 			productName = MapViewPOC;
-			productReference = 076C89B31B32A66A0012E15D /* MapViewPOC.app */;
+			productReference = 076C89B31B32A66A0012E15D /* Crumble.app */;
 			productType = "com.apple.product-type.application";
 		};
 		076C89C71B32A66A0012E15D /* MapViewPOCTests */ = {
@@ -416,6 +425,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F0FF2E1B33B19E00533E86 /* map@2x.png in Resources */,
+				07F0FF301B33B2B900533E86 /* launchImage@2x.png in Resources */,
 				0732263D1B33A2F000DFD8C3 /* forward@2x.png in Resources */,
 				0705CFB91B339A8100A71559 /* placeholder@2x.png in Resources */,
 				076C89BE1B32A66A0012E15D /* Main.storyboard in Resources */,
@@ -442,6 +453,7 @@
 				076C89BB1B32A66A0012E15D /* ViewController.swift in Sources */,
 				076C89E11B32CFB40012E15D /* AddCrumbleTableViewController.swift in Sources */,
 				073226451B33A4AE00DFD8C3 /* CrumbleDetailViewController.swift in Sources */,
+				07F0FF241B33B07500533E86 /* TabBarController.swift in Sources */,
 				076C89B91B32A66A0012E15D /* AppDelegate.swift in Sources */,
 				079698061B32F526009CD395 /* CrumbleAnnotation.swift in Sources */,
 			);
@@ -589,7 +601,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MapViewPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = MapViewPOC;
+				PRODUCT_NAME = Crumble;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -602,7 +614,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MapViewPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = MapViewPOC;
+				PRODUCT_NAME = Crumble;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;

@@ -24,7 +24,7 @@ class AddCrumbleTableViewController: UITableViewController, UINavigationControll
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.navigationBar.barTintColor = UIColor(red: 224/255, green: 172/255, blue: 37/255, alpha: 1)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

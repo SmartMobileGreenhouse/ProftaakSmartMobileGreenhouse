@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Crumble-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MapViewPOC" customModuleProvider="target" sceneMemberID="viewController">
@@ -13,11 +13,13 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nsW-Vt-GhC">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <color key="backgroundColor" red="0.14280121970000001" green="0.43506328529999999" blue="0.84820864900000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.14280121970000001" green="0.43506328529999999" blue="0.84820864900000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="aGM-kx-pH9"/>
                                 </connections>
@@ -25,7 +27,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="FXe-1r-Wkh">
+                    <navigationItem key="navigationItem" title="Crumble" id="FXe-1r-Wkh">
                         <barButtonItem key="leftBarButtonItem" image="CurrentLocation.png" id="prW-tZ-YlO">
                             <connections>
                                 <action selector="myLocation_Click:" destination="vXZ-lx-hvc" id="hdT-0N-08C"/>
@@ -57,7 +59,7 @@
                         <viewControllerLayoutGuide type="bottom" id="fJO-DO-8sC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="d4t-C8-0FC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIa-it-5S0">
@@ -118,14 +120,16 @@
         <!--Tab Bar Controller-->
         <scene sceneID="fO4-bo-olx">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="o4L-A2-Q7R" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="o4L-A2-Q7R" customClass="TabBarController" customModule="MapViewPOC" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="PLc-h5-xQ2"/>
-                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="RZO-mI-H1Y">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="RZO-mI-H1Y">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.84705882352941175" green="0.61568627450980395" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.84705882349999995" green="0.61568627450000002" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="ywZ-VN-JjL" kind="relationship" relationship="viewControllers" id="BCz-7b-MZK"/>
@@ -135,11 +139,11 @@
             </objects>
             <point key="canvasLocation" x="1196" y="243"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="lzM-Yr-jS6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ywZ-VN-JjL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="M5p-ZE-w67"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map.png" id="M5p-ZE-w67"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="A6q-bb-kcb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -170,7 +174,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="16f-Eg-fX6" id="uFZ-O1-CvF">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="MapViewPOC title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cl8-We-tRF">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Crumble Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cl8-We-tRF">
                                                     <rect key="frame" x="20" y="5" width="280" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -203,6 +207,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfS-J8-Nvd">
                                                     <rect key="frame" x="110" y="26" width="101" height="30"/>
                                                     <state key="normal" title="Select Image">
+                                                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -264,5 +269,7 @@
     </scenes>
     <resources>
         <image name="CurrentLocation.png" width="15" height="15"/>
+        <image name="map.png" width="25" height="25"/>
     </resources>
+    <color key="tintColor" red="1" green="0.9982359006" blue="0.98389693190000005" alpha="1" colorSpace="calibratedRGB"/>
 </document>
