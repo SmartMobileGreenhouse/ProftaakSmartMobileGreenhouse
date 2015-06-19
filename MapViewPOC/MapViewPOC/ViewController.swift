@@ -12,8 +12,9 @@ import CoreLocation
 import Alamofire
 import SwiftyJSON
 
-class ViewController: UIViewController, CLLocationManagerDelegate, AddCrumbleTableViewControllerDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate {
     
+    var selectedCrumble: CrumbleAnnotation?
     let locationManager = CLLocationManager()
     var lastLocation: CLLocation?
     var crumbles = [CrumbleAnnotation]()
@@ -92,9 +93,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate, AddCrumbleTab
         
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var navController: UINavigationController = segue.destinationViewController as! UINavigationController
-        var addCrumbleController: AddCrumbleTableViewController = navController.topViewController as! AddCrumbleTableViewController
-        addCrumbleController.location = lastLocation
+        
+        if(segue.identifier == "showDetail") {
+            var detailViewController: CrumbleDetailViewController = segue.destinationViewController as! CrumbleDetailViewController
+            detailViewController.crumble = selectedCrumble
+        }
+        else{
+            var navController: UINavigationController = segue.destinationViewController as! UINavigationController
+            var addCrumbleController: AddCrumbleTableViewController = navController.topViewController as! AddCrumbleTableViewController
+            addCrumbleController.location = lastLocation
+        }
+        
     }
     
     func getCrumbles() {
@@ -153,6 +162,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, AddCrumbleTab
                 annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 annotationView?.canShowCallout = true
                 //MOGELIJKE REMOVE BUTTON MAKEN OID
+                annotationView?.animatesDrop = true
+                
+                var button = UIButton.buttonWithType(.Custom) as! UIButton
+                button.frame = CGRect(x: 0, y: 0, width: 23, height: 23)
+                button.setImage(UIImage(named: "forward")!, forState: .Normal)
+                annotationView?.rightCalloutAccessoryView = button
             }
             else {
                 annotationView?.annotation = annotation
@@ -170,24 +185,28 @@ class ViewController: UIViewController, CLLocationManagerDelegate, AddCrumbleTab
         if overlay is MKCircle {
             var circleRenderer = MKCircleRenderer(overlay: overlay)
             circleRenderer.lineWidth = 1.0
-            circleRenderer.strokeColor = UIColor.yellowColor()
-            circleRenderer.fillColor = UIColor.yellowColor().colorWithAlphaComponent(0.4)
+            circleRenderer.strokeColor = UIColor.blueColor()
+            circleRenderer.fillColor = UIColor.blueColor().colorWithAlphaComponent(0.4)
             return circleRenderer
         }
         return nil
     }
     
-    //TODO Verwijder radius
-    
-    func addCrumbleTableViewControllerDidFinish(controller: AddCrumbleTableViewController) {
-        getCrumbles()
-        println("yeah")
+    func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, calloutAccessoryControlTapped control: UIControl!) {
+        var crumble = view.annotation as! CrumbleAnnotation
+        selectedCrumble = crumble
+        performSegueWithIdentifier("showDetail", sender: self)
     }
+    
+    //TODO Verwijder radius
+
     
     func loadList(notification: NSNotification){
         //load data here
         getCrumbles()
     }
+    
+    
     
 }
 

@@ -11,12 +11,8 @@ import Alamofire
 import SwiftyJSON
 import MapKit
 
-protocol AddCrumbleTableViewControllerDelegate {
-    func addCrumbleTableViewControllerDidFinish(controller: AddCrumbleTableViewController)
-}
 
 class AddCrumbleTableViewController: UITableViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-    var delegate:AddCrumbleTableViewControllerDelegate? = nil
     @IBOutlet var btnSave: UIBarButtonItem!
     @IBOutlet var textFieldTitle: UITextField!
     @IBOutlet var textViewDescription: UITextView!
@@ -127,6 +123,7 @@ class AddCrumbleTableViewController: UITableViewController, UINavigationControll
                 (urlREQ, urlResp, responsestring, error) -> Void in
                 if error == nil
                 {
+                    //WERKT OM EEN OF ANDERE GEKKE REDEN NIET MEER? subJson["iets"] = altijd nil
                     //println(responsestring)
                     //var crumble = self.parseJsonData(responsestring)
 //                    if(self.delegate != nil)
