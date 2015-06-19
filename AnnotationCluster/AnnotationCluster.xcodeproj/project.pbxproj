@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F53F26281B32B3A30039DECC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F26271B32B3A30039DECC /* AppDelegate.swift */; };
+		F53F262F1B32B3A30039DECC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53F262E1B32B3A30039DECC /* Images.xcassets */; };
+		F53F26321B32B3A30039DECC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53F26301B32B3A30039DECC /* LaunchScreen.xib */; };
+		F53F263E1B32B3A30039DECC /* AnnotationClusterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F263D1B32B3A30039DECC /* AnnotationClusterTests.swift */; };
+		F53F26541B32BBD40039DECC /* OCAlgorithms.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F264C1B32BBD40039DECC /* OCAlgorithms.m */; };
+		F53F26551B32BBD40039DECC /* OCAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F264E1B32BBD40039DECC /* OCAnnotation.m */; };
+		F53F26561B32BBD40039DECC /* OCDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F26501B32BBD40039DECC /* OCDistance.m */; };
+		F53F26571B32BBD40039DECC /* OCMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F26531B32BBD40039DECC /* OCMapView.m */; };
+		F53F265C1B32CC8F0039DECC /* AnnotationClusterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F265B1B32CC8F0039DECC /* AnnotationClusterVC.swift */; };
+		F53F265E1B32E1F00039DECC /* OCMapViewSampleHelpAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F265D1B32E1F00039DECC /* OCMapViewSampleHelpAnnotation.m */; };
+		F53F26621B32E2130039DECC /* OClusterMapView_SampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F26611B32E2130039DECC /* OClusterMapView_SampleAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F53F26381B32B3A30039DECC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F53F261A1B32B3A30039DECC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F53F26211B32B3A30039DECC;
+			remoteInfo = AnnotationCluster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F53F26221B32B3A30039DECC /* AnnotationCluster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnnotationCluster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53F26261B32B3A30039DECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53F26271B32B3A30039DECC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F53F262E1B32B3A30039DECC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F53F26311B32B3A30039DECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F53F26371B32B3A30039DECC /* AnnotationClusterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnnotationClusterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53F263C1B32B3A30039DECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53F263D1B32B3A30039DECC /* AnnotationClusterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationClusterTests.swift; sourceTree = "<group>"; };
+		F53F264A1B32BBD40039DECC /* OCAlgorithmDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCAlgorithmDelegate.h; sourceTree = "<group>"; };
+		F53F264B1B32BBD40039DECC /* OCAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCAlgorithms.h; sourceTree = "<group>"; };
+		F53F264C1B32BBD40039DECC /* OCAlgorithms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCAlgorithms.m; sourceTree = "<group>"; };
+		F53F264D1B32BBD40039DECC /* OCAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCAnnotation.h; sourceTree = "<group>"; };
+		F53F264E1B32BBD40039DECC /* OCAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCAnnotation.m; sourceTree = "<group>"; };
+		F53F264F1B32BBD40039DECC /* OCDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDistance.h; sourceTree = "<group>"; };
+		F53F26501B32BBD40039DECC /* OCDistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDistance.m; sourceTree = "<group>"; };
+		F53F26511B32BBD40039DECC /* OCGrouping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCGrouping.h; sourceTree = "<group>"; };
+		F53F26521B32BBD40039DECC /* OCMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMapView.h; sourceTree = "<group>"; };
+		F53F26531B32BBD40039DECC /* OCMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMapView.m; sourceTree = "<group>"; };
+		F53F26581B32BC2D0039DECC /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		F53F265B1B32CC8F0039DECC /* AnnotationClusterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationClusterVC.swift; sourceTree = "<group>"; };
+		F53F265D1B32E1F00039DECC /* OCMapViewSampleHelpAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMapViewSampleHelpAnnotation.m; sourceTree = "<group>"; };
+		F53F265F1B32E2080039DECC /* OCMapViewSampleHelpAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMapViewSampleHelpAnnotation.h; sourceTree = "<group>"; };
+		F53F26601B32E2130039DECC /* OClusterMapView_SampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OClusterMapView_SampleAppDelegate.h; sourceTree = "<group>"; };
+		F53F26611B32E2130039DECC /* OClusterMapView_SampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OClusterMapView_SampleAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F53F261F1B32B3A30039DECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53F26341B32B3A30039DECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F53F26191B32B3A30039DECC = {
+			isa = PBXGroup;
+			children = (
+				F53F26491B32BBD40039DECC /* OCMapView */,
+				F53F26241B32B3A30039DECC /* AnnotationCluster */,
+				F53F263A1B32B3A30039DECC /* AnnotationClusterTests */,
+				F53F26231B32B3A30039DECC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F53F26231B32B3A30039DECC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F53F26221B32B3A30039DECC /* AnnotationCluster.app */,
+				F53F26371B32B3A30039DECC /* AnnotationClusterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F53F26241B32B3A30039DECC /* AnnotationCluster */ = {
+			isa = PBXGroup;
+			children = (
+				F53F26271B32B3A30039DECC /* AppDelegate.swift */,
+				F53F262E1B32B3A30039DECC /* Images.xcassets */,
+				F53F26301B32B3A30039DECC /* LaunchScreen.xib */,
+				F53F26251B32B3A30039DECC /* Supporting Files */,
+				F53F265B1B32CC8F0039DECC /* AnnotationClusterVC.swift */,
+			);
+			path = AnnotationCluster;
+			sourceTree = "<group>";
+		};
+		F53F26251B32B3A30039DECC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F53F26261B32B3A30039DECC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F53F263A1B32B3A30039DECC /* AnnotationClusterTests */ = {
+			isa = PBXGroup;
+			children = (
+				F53F263D1B32B3A30039DECC /* AnnotationClusterTests.swift */,
+				F53F263B1B32B3A30039DECC /* Supporting Files */,
+			);
+			path = AnnotationClusterTests;
+			sourceTree = "<group>";
+		};
+		F53F263B1B32B3A30039DECC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F53F263C1B32B3A30039DECC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F53F26491B32BBD40039DECC /* OCMapView */ = {
+			isa = PBXGroup;
+			children = (
+				F53F26601B32E2130039DECC /* OClusterMapView_SampleAppDelegate.h */,
+				F53F26611B32E2130039DECC /* OClusterMapView_SampleAppDelegate.m */,
+				F53F265F1B32E2080039DECC /* OCMapViewSampleHelpAnnotation.h */,
+				F53F265D1B32E1F00039DECC /* OCMapViewSampleHelpAnnotation.m */,
+				F53F264A1B32BBD40039DECC /* OCAlgorithmDelegate.h */,
+				F53F264B1B32BBD40039DECC /* OCAlgorithms.h */,
+				F53F264C1B32BBD40039DECC /* OCAlgorithms.m */,
+				F53F264D1B32BBD40039DECC /* OCAnnotation.h */,
+				F53F264E1B32BBD40039DECC /* OCAnnotation.m */,
+				F53F264F1B32BBD40039DECC /* OCDistance.h */,
+				F53F26501B32BBD40039DECC /* OCDistance.m */,
+				F53F26511B32BBD40039DECC /* OCGrouping.h */,
+				F53F26521B32BBD40039DECC /* OCMapView.h */,
+				F53F26531B32BBD40039DECC /* OCMapView.m */,
+				F53F26581B32BC2D0039DECC /* BridgingHeader.h */,
+			);
+			path = OCMapView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F53F26211B32B3A30039DECC /* AnnotationCluster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53F26411B32B3A30039DECC /* Build configuration list for PBXNativeTarget "AnnotationCluster" */;
+			buildPhases = (
+				F53F261E1B32B3A30039DECC /* Sources */,
+				F53F261F1B32B3A30039DECC /* Frameworks */,
+				F53F26201B32B3A30039DECC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnnotationCluster;
+			productName = AnnotationCluster;
+			productReference = F53F26221B32B3A30039DECC /* AnnotationCluster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F53F26361B32B3A30039DECC /* AnnotationClusterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53F26441B32B3A30039DECC /* Build configuration list for PBXNativeTarget "AnnotationClusterTests" */;
+			buildPhases = (
+				F53F26331B32B3A30039DECC /* Sources */,
+				F53F26341B32B3A30039DECC /* Frameworks */,
+				F53F26351B32B3A30039DECC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F53F26391B32B3A30039DECC /* PBXTargetDependency */,
+			);
+			name = AnnotationClusterTests;
+			productName = AnnotationClusterTests;
+			productReference = F53F26371B32B3A30039DECC /* AnnotationClusterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F53F261A1B32B3A30039DECC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Fhict;
+				TargetAttributes = {
+					F53F26211B32B3A30039DECC = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					F53F26361B32B3A30039DECC = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = F53F26211B32B3A30039DECC;
+					};
+				};
+			};
+			buildConfigurationList = F53F261D1B32B3A30039DECC /* Build configuration list for PBXProject "AnnotationCluster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F53F26191B32B3A30039DECC;
+			productRefGroup = F53F26231B32B3A30039DECC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F53F26211B32B3A30039DECC /* AnnotationCluster */,
+				F53F26361B32B3A30039DECC /* AnnotationClusterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F53F26201B32B3A30039DECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53F26321B32B3A30039DECC /* LaunchScreen.xib in Resources */,
+				F53F262F1B32B3A30039DECC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53F26351B32B3A30039DECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F53F261E1B32B3A30039DECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53F265E1B32E1F00039DECC /* OCMapViewSampleHelpAnnotation.m in Sources */,
+				F53F26541B32BBD40039DECC /* OCAlgorithms.m in Sources */,
+				F53F26551B32BBD40039DECC /* OCAnnotation.m in Sources */,
+				F53F26561B32BBD40039DECC /* OCDistance.m in Sources */,
+				F53F26281B32B3A30039DECC /* AppDelegate.swift in Sources */,
+				F53F26621B32E2130039DECC /* OClusterMapView_SampleAppDelegate.m in Sources */,
+				F53F265C1B32CC8F0039DECC /* AnnotationClusterVC.swift in Sources */,
+				F53F26571B32BBD40039DECC /* OCMapView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53F26331B32B3A30039DECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53F263E1B32B3A30039DECC /* AnnotationClusterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F53F26391B32B3A30039DECC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F53F26211B32B3A30039DECC /* AnnotationCluster */;
+			targetProxy = F53F26381B32B3A30039DECC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F53F26301B32B3A30039DECC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F53F26311B32B3A30039DECC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F53F263F1B32B3A30039DECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F53F26401B32B3A30039DECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F53F26421B32B3A30039DECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = AnnotationCluster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/OCMapView/BridgingHeader.h";
+			};
+			name = Debug;
+		};
+		F53F26431B32B3A30039DECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = AnnotationCluster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/OCMapView/BridgingHeader.h";
+			};
+			name = Release;
+		};
+		F53F26451B32B3A30039DECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AnnotationClusterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnnotationCluster.app/AnnotationCluster";
+			};
+			name = Debug;
+		};
+		F53F26461B32B3A30039DECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AnnotationClusterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnnotationCluster.app/AnnotationCluster";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F53F261D1B32B3A30039DECC /* Build configuration list for PBXProject "AnnotationCluster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53F263F1B32B3A30039DECC /* Debug */,
+				F53F26401B32B3A30039DECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F53F26411B32B3A30039DECC /* Build configuration list for PBXNativeTarget "AnnotationCluster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53F26421B32B3A30039DECC /* Debug */,
+				F53F26431B32B3A30039DECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F53F26441B32B3A30039DECC /* Build configuration list for PBXNativeTarget "AnnotationClusterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53F26451B32B3A30039DECC /* Debug */,
+				F53F26461B32B3A30039DECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F53F261A1B32B3A30039DECC /* Project object */;
+}
