@@ -214,6 +214,7 @@ class AddCrumbleTableViewController: UITableViewController, UINavigationControll
     }
     
     @IBAction func btnCancel_Click(sender: AnyObject) {
+        NSNotificationCenter.defaultCenter().postNotificationName("load", object: nil)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
