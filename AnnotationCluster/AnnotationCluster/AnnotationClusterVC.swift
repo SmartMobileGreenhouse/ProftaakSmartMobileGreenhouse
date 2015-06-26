@@ -33,7 +33,7 @@ class AnnotationClusterVC: UIViewController {
             
             annotationView = aMapView.dequeueReusableAnnotationViewWithIdentifier("ClusterView") as (MKAnnotationView)
             
-            if (annotationView == nil) {
+            if (!annotationView) {
                 annotationView = initWithAnnotation(annotation: MKAnnotation, reustIdentifier: "ClusterView")
                 annotationView.canShowCallout = YES;
                 annotationView.centerOffset = CGPointMake(0, -20);
