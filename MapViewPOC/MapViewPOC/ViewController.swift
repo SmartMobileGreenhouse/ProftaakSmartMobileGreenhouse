@@ -156,6 +156,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
         //println("plz do this")
+        // Single Annotation
         if annotation is CrumbleAnnotation {
             //println("annotation is CrumbleAnnotation")
             let identifier = "myPin"
@@ -176,7 +177,44 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             }
             return annotationView
         }
+        // Cluster Annotations
+        else if annotation is ClusterAnnotation {
+            let clusterAnnotation = annotation as ClusterAnnotation
+            identifier = "myPins"
+            annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier) as? MKPinAnnotationView
+            
+            if annotationView == nil {
+                annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                annotationView?.canShowCallout = true
+                //MOGELIJKE REMOVE BUTTON MAKEN OID
+                annotationView?.animatesDrop = true
+                
+                var button = UIButton.buttonWithType(.Custom) as! UIButton
+                button.frame = CGRect(x: 0, y: 0, width: 23, height: 23)
+                button.setImage(UIImage(named: "forward")!, forState: .Normal)
+                annotationView?.rightCalloutAccessoryView = button
+            }
+            return annotationView?.annotation
+        }
         return nil
+    }
+    //
+    func clusterAnnotations() {
+        annotationsToCluster:NSArray = crumbles
+        
+        clusterdAnnotations:NSArray = nil
+        clusteredAnnotations = OCAlgoritmes.bubbleClusteringWithAnnotations(annotationsToCluster)
+    }
+    // Add cluster to Annotation
+    func addAnnotations(annotations: NSArray) {
+        for (annotation: annotations) {
+            self.addAnnotation(annotation))
+        }
+    }
+    // Adds a new annotation to a cluster
+    func addAnnotation(annotation: CrumbleAnnotation) {
+        annotationsInCluster.add(annotation)
+        clusterAnnotations()
     }
     
     func addRadiusOverlayForCrumble(crumble: CrumbleAnnotation) {

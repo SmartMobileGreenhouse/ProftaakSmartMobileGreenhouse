@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../OCAlgoritmes.swift">
+   </FileRef>
+   <FileRef
       location = "self:/Users/Eric/git/ProftaakSmartMobileGreenhouse/MapViewPOC/MapViewPOC.xcodeproj">
    </FileRef>
 </Workspace>
