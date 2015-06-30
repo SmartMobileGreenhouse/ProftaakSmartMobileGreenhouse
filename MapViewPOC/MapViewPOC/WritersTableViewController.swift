@@ -147,6 +147,7 @@ class WritersTableViewController: UITableViewController {
     
     func parseJsonData(jsonData:AnyObject?)
     {
+        users.removeAll(keepCapacity: false)
         var jsonConverted = JSON(jsonData!)
         //Werkt blijkbaar alleen als subJson een array met objecten is!! (komt van swiftyjson af)
         for (index: String, subJson: JSON) in jsonConverted{
