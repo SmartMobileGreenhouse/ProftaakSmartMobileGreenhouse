@@ -24,7 +24,6 @@ class AddCrumbleTableViewController: UITableViewController, UINavigationControll
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.barTintColor = UIColor(red: 224/255, green: 172/255, blue: 37/255, alpha: 1)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -123,13 +122,6 @@ class AddCrumbleTableViewController: UITableViewController, UINavigationControll
                 (urlREQ, urlResp, responsestring, error) -> Void in
                 if error == nil
                 {
-                    //WERKT OM EEN OF ANDERE GEKKE REDEN NIET MEER? subJson["iets"] = altijd nil
-                    //println(responsestring)
-                    //var crumble = self.parseJsonData(responsestring)
-//                    if(self.delegate != nil)
-//                    {
-//                        self.delegate!.addCrumbleTableViewControllerDidFinish(self)
-//                    }
                     NSNotificationCenter.defaultCenter().postNotificationName("load", object: nil)
                     self.dismissViewControllerAnimated(true, completion: nil)
                 }
@@ -140,40 +132,12 @@ class AddCrumbleTableViewController: UITableViewController, UINavigationControll
                 }
             })
         }
-        else{
+        else {
             //Alert laten zien.
-            
+            var alert = UIAlertController(title: "Melding", message: "Vul tenminste de titel en de omschrijving in", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
         }
-        
-        
-    }
-    
-    func parseJsonData(jsonData:AnyObject?) -> CrumbleAnnotation?
-    {
-        var jsonConverted = JSON(jsonData!)
-        println(jsonConverted)
-        
-        for (index: String, subJson: JSON) in jsonConverted{
-            var imagePath = subJson["crumbleImagePath"]
-            var imagePathString = ""
-            if imagePath == nil {
-                imagePathString = ""
-            }
-            else {
-                imagePathString = imagePath.string!
-            }
-            var lat = subJson["crumbleLat"].double!
-            var long = subJson["crumbleLong"].double!
-            var id = subJson["crumbleIdentifier"].int!
-            var text = subJson["crumbleTekst"].string!
-            var author = subJson["crumbleAuthor"].string!
-            var date = subJson["crumbleDate"].string!
-            var title = subJson["crumbleTitle"].string!
-//            let crumble = CrumbleAnnotation(latitude: lat, longitude: long, identifier: id, crumbleText: text, author: author, imagePath: imagePathString, date: date, title: title)
-//            let crumble = CrumbleAnnotation(latitude: subJson["crumbleLat"].double!, longitude: subJson["crumbleLong"].double!, identifier: subJson["crumbleIdentifier"].int!, crumbleText: subJson["crumbleTekst"].string!, author: subJson["crumbleAuthor"].string!, imagePath: imagePathString, date: subJson["crumbleDate"].string!, title: subJson["crumbleTitle"].string!)
-            return nil
-        }
-        return nil
     }
 
     @IBAction func selectImage_Click(sender: AnyObject) {

@@ -26,7 +26,6 @@ class CrumbleDetailViewController: UIViewController {
         lblAuthor.text = crumble?.author
         lblDate.text = crumble?.date
         textView.text  = crumble?.crumbleText
-        navigationController?.navigationBar.barTintColor = UIColor(red: 224/255, green: 172/255, blue: 37/255, alpha: 1)
         if(crumble?.imagePath != "")
         {
             //Load image

@@ -10,6 +10,12 @@
 		0705CFB91B339A8100A71559 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0705CFB81B339A8100A71559 /* placeholder@2x.png */; };
 		0732263D1B33A2F000DFD8C3 /* forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0732263C1B33A2F000DFD8C3 /* forward@2x.png */; };
 		073226451B33A4AE00DFD8C3 /* CrumbleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073226441B33A4AE00DFD8C3 /* CrumbleDetailViewController.swift */; };
+		0734D3AA1B3D71D80040EA6B /* logo_crumble_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0734D3A91B3D71D80040EA6B /* logo_crumble_white@2x.png */; };
+		0760F96F1B42EAB500C5A495 /* add_user_filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0760F96D1B42EAB500C5A495 /* add_user_filled@2x.png */; };
+		0760F9701B42EAB500C5A495 /* add_user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0760F96E1B42EAB500C5A495 /* add_user@2x.png */; };
+		0760F97C1B42F09400C5A495 /* WritersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0760F97B1B42F09400C5A495 /* WritersTableViewController.swift */; };
+		0760F97E1B42F21A00C5A495 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0760F97D1B42F21A00C5A495 /* CategoryTableViewController.swift */; };
+		0760F9821B433BE200C5A495 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0760F9811B433BE200C5A495 /* User.swift */; };
 		076C89B91B32A66A0012E15D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C89B81B32A66A0012E15D /* AppDelegate.swift */; };
 		076C89BB1B32A66A0012E15D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076C89BA1B32A66A0012E15D /* ViewController.swift */; };
 		076C89BE1B32A66A0012E15D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076C89BC1B32A66A0012E15D /* Main.storyboard */; };
@@ -136,7 +142,13 @@
 		0705CFB81B339A8100A71559 /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder@2x.png"; sourceTree = "<group>"; };
 		0732263C1B33A2F000DFD8C3 /* forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward@2x.png"; sourceTree = "<group>"; };
 		073226441B33A4AE00DFD8C3 /* CrumbleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrumbleDetailViewController.swift; sourceTree = "<group>"; };
+		0734D3A91B3D71D80040EA6B /* logo_crumble_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_crumble_white@2x.png"; sourceTree = "<group>"; };
 		073929671B32D15400AB829B /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../Alamofire-master 3/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		0760F96D1B42EAB500C5A495 /* add_user_filled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_user_filled@2x.png"; sourceTree = "<group>"; };
+		0760F96E1B42EAB500C5A495 /* add_user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_user@2x.png"; sourceTree = "<group>"; };
+		0760F97B1B42F09400C5A495 /* WritersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritersTableViewController.swift; sourceTree = "<group>"; };
+		0760F97D1B42F21A00C5A495 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		0760F9811B433BE200C5A495 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		076C89B31B32A66A0012E15D /* Crumble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crumble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		076C89B71B32A66A0012E15D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		076C89B81B32A66A0012E15D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -220,6 +232,9 @@
 				076C89BA1B32A66A0012E15D /* ViewController.swift */,
 				076C89BC1B32A66A0012E15D /* Main.storyboard */,
 				076C89DC1B32C1FE0012E15D /* CurrentLocation@2x.png */,
+				0734D3A91B3D71D80040EA6B /* logo_crumble_white@2x.png */,
+				0760F96D1B42EAB500C5A495 /* add_user_filled@2x.png */,
+				0760F96E1B42EAB500C5A495 /* add_user@2x.png */,
 				0732263C1B33A2F000DFD8C3 /* forward@2x.png */,
 				07F0FF2D1B33B19E00533E86 /* map@2x.png */,
 				076C89BF1B32A66A0012E15D /* Images.xcassets */,
@@ -231,6 +246,9 @@
 				079698051B32F526009CD395 /* CrumbleAnnotation.swift */,
 				073226441B33A4AE00DFD8C3 /* CrumbleDetailViewController.swift */,
 				07F0FF231B33B07500533E86 /* TabBarController.swift */,
+				0760F97B1B42F09400C5A495 /* WritersTableViewController.swift */,
+				0760F97D1B42F21A00C5A495 /* CategoryTableViewController.swift */,
+				0760F9811B433BE200C5A495 /* User.swift */,
 			);
 			path = MapViewPOC;
 			sourceTree = "<group>";
@@ -428,9 +446,12 @@
 				07F0FF2E1B33B19E00533E86 /* map@2x.png in Resources */,
 				07F0FF301B33B2B900533E86 /* launchImage@2x.png in Resources */,
 				0732263D1B33A2F000DFD8C3 /* forward@2x.png in Resources */,
+				0760F9701B42EAB500C5A495 /* add_user@2x.png in Resources */,
+				0760F96F1B42EAB500C5A495 /* add_user_filled@2x.png in Resources */,
 				0705CFB91B339A8100A71559 /* placeholder@2x.png in Resources */,
 				076C89BE1B32A66A0012E15D /* Main.storyboard in Resources */,
 				076C89C31B32A66A0012E15D /* LaunchScreen.xib in Resources */,
+				0734D3AA1B3D71D80040EA6B /* logo_crumble_white@2x.png in Resources */,
 				076C89C01B32A66A0012E15D /* Images.xcassets in Resources */,
 				076C89DD1B32C1FE0012E15D /* CurrentLocation@2x.png in Resources */,
 			);
@@ -453,6 +474,9 @@
 				076C89BB1B32A66A0012E15D /* ViewController.swift in Sources */,
 				076C89E11B32CFB40012E15D /* AddCrumbleTableViewController.swift in Sources */,
 				073226451B33A4AE00DFD8C3 /* CrumbleDetailViewController.swift in Sources */,
+				0760F97E1B42F21A00C5A495 /* CategoryTableViewController.swift in Sources */,
+				0760F97C1B42F09400C5A495 /* WritersTableViewController.swift in Sources */,
+				0760F9821B433BE200C5A495 /* User.swift in Sources */,
 				07F0FF241B33B07500533E86 /* TabBarController.swift in Sources */,
 				076C89B91B32A66A0012E15D /* AppDelegate.swift in Sources */,
 				079698061B32F526009CD395 /* CrumbleAnnotation.swift in Sources */,
