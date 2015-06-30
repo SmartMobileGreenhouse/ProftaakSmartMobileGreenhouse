@@ -21,6 +21,7 @@ class WritersTableViewController: UITableViewController {
         
         self.navigationController?.navigationBar.topItem?.title = selectedCategory
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         getWriters()
         needsToLoadData = false
         // Uncomment the following line to preserve selection between presentations
@@ -131,7 +132,8 @@ class WritersTableViewController: UITableViewController {
             if error == nil
             {
                 //Uncomment als er iets mis is
-                println(responsestring)
+                //println(responsestring)
+                println("Opnieuw laden..")
                 self.parseJsonData(responsestring)
                 
             }
@@ -159,6 +161,7 @@ class WritersTableViewController: UITableViewController {
             let user = User(username: subJson["username"].string!, profilename: subJson["profilename"].string!, imagePath: imagePathString)
             users.append(user)
         }
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
         tableView.reloadData()
     }
     
@@ -170,6 +173,7 @@ class WritersTableViewController: UITableViewController {
                 self.selectedCategory = categoryTableViewController.selectedCategory
                 println("Selected \(categoryTableViewController.selectedCategory)")
                 self.needsToLoadData = true
+                UIApplication.sharedApplication().networkActivityIndicatorVisible = true
             }
             else
             {
