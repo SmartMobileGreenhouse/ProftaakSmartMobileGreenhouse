@@ -312,9 +312,16 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r25-qQ-tFL">
+                                            <rect key="frame" x="105" y="36" width="174" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="lblUsername" destination="r25-qQ-tFL" id="o1v-bh-26X"/>
                                     <outlet property="lblWritername" destination="j54-yx-wsS" id="eSU-2I-PHF"/>
                                     <outlet property="writerImage" destination="Hbc-wE-iX3" id="cgH-lR-b0s"/>
                                 </connections>

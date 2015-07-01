@@ -14,6 +14,8 @@ class WriterTableViewCell: UITableViewCell {
     
     @IBOutlet var lblWritername: UILabel!
     
+    @IBOutlet var lblUsername: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

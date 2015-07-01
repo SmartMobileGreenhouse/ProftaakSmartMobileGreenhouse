@@ -67,6 +67,7 @@ class WritersTableViewController: UITableViewController {
         var user = users[indexPath.item]
         cell.lblWritername.text = user.profilename
         cell.writerImage.image = user.image
+        cell.lblUsername.text = user.username
         return cell
     }
     
