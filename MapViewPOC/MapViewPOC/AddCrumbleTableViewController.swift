@@ -106,12 +106,13 @@ class AddCrumbleTableViewController: UITableViewController, UINavigationControll
     }
     */
     @IBAction func btnSave_Click(sender: AnyObject) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         var lat:String = " \(location!.coordinate.latitude)"
         var long:String = " \(location!.coordinate.longitude)"
         var encodedBase64 = ""
         if(!textFieldTitle.text.isEmpty && !textViewDescription.text.isEmpty) {
             if(imageGlobal != nil) {
-                var imageData = UIImageJPEGRepresentation(imageGlobal, 0.5)
+                var imageData = UIImageJPEGRepresentation(imageGlobal, 0.0)
                 encodedBase64 = imageData.base64EncodedStringWithOptions(.allZeros)
             }
             var parametersWithImage = ["crumbleTitle":textFieldTitle.text, "author":"ericderegter@gmail.com", "longitude":long as String, "latitude": lat , "crumbleText":textViewDescription.text, "image":encodedBase64, "angle":hasToTurn]
@@ -123,6 +124,7 @@ class AddCrumbleTableViewController: UITableViewController, UINavigationControll
                 if error == nil
                 {
                     NSNotificationCenter.defaultCenter().postNotificationName("load", object: nil)
+                    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
                     self.dismissViewControllerAnimated(true, completion: nil)
                 }
                 else
@@ -138,6 +140,7 @@ class AddCrumbleTableViewController: UITableViewController, UINavigationControll
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
         }
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
     }
 
     @IBAction func selectImage_Click(sender: AnyObject) {
