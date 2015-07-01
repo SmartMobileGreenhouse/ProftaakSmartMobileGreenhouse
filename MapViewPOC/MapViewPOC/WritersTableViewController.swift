@@ -59,12 +59,15 @@ class WritersTableViewController: UITableViewController {
     }
     
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("WriterCell", forIndexPath: indexPath) as! UITableViewCell
-    cell.textLabel?.text = users[indexPath.item].profilename
-    // Configure the cell...
-    
-    return cell
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> WriterTableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("WriterCell", forIndexPath: indexPath) as! WriterTableViewCell
+        
+        //cell.textLabel?.text = users[indexPath.item].profilename
+        // Configure the cell...
+        var user = users[indexPath.item]
+        cell.lblWritername.text = user.profilename
+        cell.writerImage.image = user.image
+        return cell
     }
     
     
@@ -151,6 +154,7 @@ class WritersTableViewController: UITableViewController {
         var jsonConverted = JSON(jsonData!)
         //Werkt blijkbaar alleen als subJson een array met objecten is!! (komt van swiftyjson af)
         for (index: String, subJson: JSON) in jsonConverted{
+            var image = UIImage(named: "default")
             var imagePath = subJson["profileimagePath"].string
             var imagePathString = ""
             if imagePath == nil {
@@ -158,12 +162,21 @@ class WritersTableViewController: UITableViewController {
             }
             else {
                 imagePathString = imagePath!
+                image = loadImage(imagePathString)
             }
             let user = User(username: subJson["username"].string!, profilename: subJson["profilename"].string!, imagePath: imagePathString)
+            user.image = image
             users.append(user)
         }
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
         tableView.reloadData()
+    }
+    
+    func loadImage(urlString: String) -> UIImage {
+        var imageUrlString = "http://77.175.219.85/\(urlString)"
+        let url = NSURL(string: imageUrlString)
+        let data = NSData(contentsOfURL: url!)
+        return UIImage(data: data!)!
     }
     
     
@@ -181,8 +194,6 @@ class WritersTableViewController: UITableViewController {
                 println("Cancel clicked!")
                 self.needsToLoadData = false
             }
-            
         }
     }
-    
 }

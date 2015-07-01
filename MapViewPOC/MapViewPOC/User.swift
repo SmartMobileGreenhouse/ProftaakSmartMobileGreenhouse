@@ -13,10 +13,12 @@ class User: NSObject {
     var username: String
     var profilename: String
     var imagePath: String
+    var image: UIImage?
     
     init(username: String, profilename: String, imagePath: String) {
         self.username = username
         self.profilename = profilename
         self.imagePath = imagePath
+        self.image = UIImage(named: "default")
     }
 }

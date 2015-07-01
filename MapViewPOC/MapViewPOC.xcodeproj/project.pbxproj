@@ -31,6 +31,8 @@
 		079697FD1B32D412009CD395 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079697F61B32D40C009CD395 /* SwiftyJSON.framework */; };
 		079697FE1B32D412009CD395 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 079697F61B32D40C009CD395 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		079698061B32F526009CD395 /* CrumbleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079698051B32F526009CD395 /* CrumbleAnnotation.swift */; };
+		07B41BFD1B44017900F53B10 /* WriterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B41BFC1B44017900F53B10 /* WriterTableViewCell.swift */; };
+		07B41C011B44149900F53B10 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B41C001B44149900F53B10 /* default@2x.png */; };
 		07F0FF241B33B07500533E86 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0FF231B33B07500533E86 /* TabBarController.swift */; };
 		07F0FF2E1B33B19E00533E86 /* map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07F0FF2D1B33B19E00533E86 /* map@2x.png */; };
 		07F0FF301B33B2B900533E86 /* launchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07F0FF2F1B33B2B900533E86 /* launchImage@2x.png */; };
@@ -165,6 +167,8 @@
 		076C89E01B32CFB40012E15D /* AddCrumbleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCrumbleTableViewController.swift; sourceTree = "<group>"; };
 		079697EE1B32D40C009CD395 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
 		079698051B32F526009CD395 /* CrumbleAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrumbleAnnotation.swift; sourceTree = "<group>"; };
+		07B41BFC1B44017900F53B10 /* WriterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriterTableViewCell.swift; sourceTree = "<group>"; };
+		07B41C001B44149900F53B10 /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
 		07F0FF231B33B07500533E86 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		07F0FF2D1B33B19E00533E86 /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map@2x.png"; sourceTree = "<group>"; };
 		07F0FF2F1B33B2B900533E86 /* launchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage@2x.png"; sourceTree = "<group>"; };
@@ -239,6 +243,7 @@
 				07F0FF2D1B33B19E00533E86 /* map@2x.png */,
 				076C89BF1B32A66A0012E15D /* Images.xcassets */,
 				07F0FF2F1B33B2B900533E86 /* launchImage@2x.png */,
+				07B41C001B44149900F53B10 /* default@2x.png */,
 				0705CFB81B339A8100A71559 /* placeholder@2x.png */,
 				076C89C11B32A66A0012E15D /* LaunchScreen.xib */,
 				076C89B61B32A66A0012E15D /* Supporting Files */,
@@ -249,6 +254,7 @@
 				0760F97B1B42F09400C5A495 /* WritersTableViewController.swift */,
 				0760F97D1B42F21A00C5A495 /* CategoryTableViewController.swift */,
 				0760F9811B433BE200C5A495 /* User.swift */,
+				07B41BFC1B44017900F53B10 /* WriterTableViewCell.swift */,
 			);
 			path = MapViewPOC;
 			sourceTree = "<group>";
@@ -451,6 +457,7 @@
 				0705CFB91B339A8100A71559 /* placeholder@2x.png in Resources */,
 				076C89BE1B32A66A0012E15D /* Main.storyboard in Resources */,
 				076C89C31B32A66A0012E15D /* LaunchScreen.xib in Resources */,
+				07B41C011B44149900F53B10 /* default@2x.png in Resources */,
 				0734D3AA1B3D71D80040EA6B /* logo_crumble_white@2x.png in Resources */,
 				076C89C01B32A66A0012E15D /* Images.xcassets in Resources */,
 				076C89DD1B32C1FE0012E15D /* CurrentLocation@2x.png in Resources */,
@@ -477,6 +484,7 @@
 				0760F97E1B42F21A00C5A495 /* CategoryTableViewController.swift in Sources */,
 				0760F97C1B42F09400C5A495 /* WritersTableViewController.swift in Sources */,
 				0760F9821B433BE200C5A495 /* User.swift in Sources */,
+				07B41BFD1B44017900F53B10 /* WriterTableViewCell.swift in Sources */,
 				07F0FF241B33B07500533E86 /* TabBarController.swift in Sources */,
 				076C89B91B32A66A0012E15D /* AppDelegate.swift in Sources */,
 				079698061B32F526009CD395 /* CrumbleAnnotation.swift in Sources */,
