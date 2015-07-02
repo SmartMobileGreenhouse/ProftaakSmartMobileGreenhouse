@@ -9,7 +9,7 @@
 import UIKit
 class CategoryTableViewController: UITableViewController{
     
-    var categories = ["People", "Action", "Adventure", "Comedy", "Crime", "Fantasy", "Historical", "Historycal Fiction", "Horror", "Mystery", "Philosophical", "Political", "Romance", "Satire", "Science Fiction", "Speculative", "Thriller", "Urban"]
+    var categories = ["Recommended","People", "Action", "Adventure", "Comedy", "Crime", "Fantasy", "Historical", "Historycal Fiction", "Horror", "Mystery", "Philosophical", "Political", "Romance", "Satire", "Science Fiction", "Speculative", "Thriller", "Urban"]
     
     var selectedCategory = ""
     var searchActive = false
