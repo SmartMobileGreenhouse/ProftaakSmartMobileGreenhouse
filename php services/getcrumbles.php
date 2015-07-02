@@ -28,11 +28,13 @@ class User {
 	public $username;
 	public $profilename;
 	public $profileimagePath;
+	public $genre;
 
-	public function __construct($username, $profilename, $profileimagePath) {
+	public function __construct($username, $profilename, $profileimagePath, $genre) {
 		$this->username = $username;
 		$this->profilename = $profilename;
 		$this->profileimagePath = $profileimagePath;
+		$this->genre = $genre;
 	}
 }
 
@@ -70,10 +72,10 @@ if($stmnt->execute()) {
 		}
 	}
 	else {
-		$stmnt->bind_result($username,  $profilename, $userpass, $profileimagepath);
+		$stmnt->bind_result($username,  $profilename, $userpass, $profileimagepath, $genre);
 	//$result = $stmnt->get_result();
 		while ($stmnt->fetch()) {
-			$user = new User($username, $profilename, $profileimagepath);
+			$user = new User($username, $profilename, $profileimagepath, $genre);
 			array_push($results, $user);
 		}
 	}

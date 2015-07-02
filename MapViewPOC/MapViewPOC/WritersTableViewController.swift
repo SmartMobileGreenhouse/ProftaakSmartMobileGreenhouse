@@ -13,7 +13,7 @@ import SwiftyJSON
 class WritersTableViewController: UITableViewController, UISearchBarDelegate  {
     
     @IBOutlet var searchbar: UISearchBar!
-    var selectedCategory = "Categories"
+    var selectedCategory = "People"
     var needsToLoadData = true
     var searchActive = false
     var searchResults = [User]()
@@ -82,9 +82,22 @@ class WritersTableViewController: UITableViewController, UISearchBarDelegate  {
         cell.lblWritername.text = user.profilename
         cell.writerImage.image = user.image
         cell.lblUsername.text = user.username
+        cell.lblranking.text = "\(indexPath.item + 1)."
         return cell
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var user = users[indexPath.item]
+        if(searchActive) {
+            user = searchResults[indexPath.item]
+        }
+        
+        var alert = UIAlertController(title: "Demo", message: "\(user.profilename) selected", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: {
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        })
+    }
     
     /*
     // Override to support conditional editing of the table view.
@@ -169,19 +182,22 @@ class WritersTableViewController: UITableViewController, UISearchBarDelegate  {
         var jsonConverted = JSON(jsonData!)
         //Werkt blijkbaar alleen als subJson een array met objecten is!! (komt van swiftyjson af)
         for (index: String, subJson: JSON) in jsonConverted{
-            var image = UIImage(named: "default")
-            var imagePath = subJson["profileimagePath"].string
-            var imagePathString = ""
-            if imagePath == nil {
-                imagePathString = ""
+            if(subJson["genre"].string! == selectedCategory || selectedCategory == "People")
+            {
+                var image = UIImage(named: "default")
+                var imagePath = subJson["profileimagePath"].string
+                var imagePathString = ""
+                if imagePath == nil {
+                    imagePathString = ""
+                }
+                else {
+                    imagePathString = imagePath!
+                    image = loadImage(imagePathString)
+                }
+                let user = User(username: subJson["username"].string!, profilename: subJson["profilename"].string!, imagePath: imagePathString, genre: subJson["genre"].string!)
+                user.image = image
+                users.append(user)
             }
-            else {
-                imagePathString = imagePath!
-                image = loadImage(imagePathString)
-            }
-            let user = User(username: subJson["username"].string!, profilename: subJson["profilename"].string!, imagePath: imagePathString)
-            user.image = image
-            users.append(user)
         }
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
         tableView.reloadData()
