@@ -7,16 +7,17 @@
 //
 
 import UIKit
-
-class CategoryTableViewController: UITableViewController {
+class CategoryTableViewController: UITableViewController{
     
     var categories = ["Categories", "Action", "Adventure", "Comedy", "Crime", "Fantasy", "Historical", "Historycal Fiction", "Horror", "Mystery", "Philosophical", "Political", "Romance", "Satire", "Science Fiction", "Speculative", "Thriller", "Urban"]
     
     var selectedCategory = ""
+    var searchActive = false
+    var users = [User]()
+    var searchResults = [User]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         

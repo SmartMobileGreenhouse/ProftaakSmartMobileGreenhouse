@@ -10,11 +10,13 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class WritersTableViewController: UITableViewController {
+class WritersTableViewController: UITableViewController, UISearchBarDelegate  {
     
+    @IBOutlet var searchbar: UISearchBar!
     var selectedCategory = "Categories"
     var needsToLoadData = true
-    
+    var searchActive = false
+    var searchResults = [User]()
     var users = [User]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,7 @@ class WritersTableViewController: UITableViewController {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         getWriters()
         needsToLoadData = false
+        searchbar.delegate = self
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -55,16 +58,27 @@ class WritersTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return users.count
+        
+        if(searchActive)
+        {
+            return searchResults.count
+        }
+        else
+        {
+            return users.count
+        }
     }
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> WriterTableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("WriterCell", forIndexPath: indexPath) as! WriterTableViewCell
-        
+        var user = users[indexPath.item]
         //cell.textLabel?.text = users[indexPath.item].profilename
         // Configure the cell...
-        var user = users[indexPath.item]
+        if(searchActive)
+        {
+            user = searchResults[indexPath.item]
+        }
         cell.lblWritername.text = user.profilename
         cell.writerImage.image = user.image
         cell.lblUsername.text = user.username
@@ -196,5 +210,40 @@ class WritersTableViewController: UITableViewController {
                 self.needsToLoadData = false
             }
         }
+    }
+    
+    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+        searchActive = false
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        searchActive = false
+        searchbar.resignFirstResponder()
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        searchActive = false
+        searchbar.resignFirstResponder()
+    }
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        searchActive = true
+        searchResults.removeAll(keepCapacity: false)
+        
+        for user in users as [User]{
+            if((user.username.lowercaseString.rangeOfString(searchText.lowercaseString)) != nil || (user.profilename.lowercaseString.rangeOfString(searchText.lowercaseString)) != nil)
+            {
+                searchResults.append(user)
+            }
+        }
+        if(searchResults.count == 0 && searchText == "")
+        {
+            searchActive = false
+        }
+        else
+        {
+            searchActive = true
+        }
+        self.tableView.reloadData()
     }
 }
