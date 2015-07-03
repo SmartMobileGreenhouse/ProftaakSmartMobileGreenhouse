@@ -36,6 +36,7 @@
 		07F0FF241B33B07500533E86 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0FF231B33B07500533E86 /* TabBarController.swift */; };
 		07F0FF2E1B33B19E00533E86 /* map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07F0FF2D1B33B19E00533E86 /* map@2x.png */; };
 		07F0FF301B33B2B900533E86 /* launchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07F0FF2F1B33B2B900533E86 /* launchImage@2x.png */; };
+		F5A6DD8B1B46783C0023F2E2 /* crumb.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A6DD8A1B46783C0023F2E2 /* crumb.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +173,7 @@
 		07F0FF231B33B07500533E86 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		07F0FF2D1B33B19E00533E86 /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map@2x.png"; sourceTree = "<group>"; };
 		07F0FF2F1B33B2B900533E86 /* launchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage@2x.png"; sourceTree = "<group>"; };
+		F5A6DD8A1B46783C0023F2E2 /* crumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crumb.png; path = "../../../../../Dropbox/hbo/s3/p5/proftaak sm31 groep 4/crumb.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +237,7 @@
 				076C89B81B32A66A0012E15D /* AppDelegate.swift */,
 				076C89BA1B32A66A0012E15D /* ViewController.swift */,
 				076C89BC1B32A66A0012E15D /* Main.storyboard */,
+				F5A6DD8A1B46783C0023F2E2 /* crumb.png */,
 				076C89DC1B32C1FE0012E15D /* CurrentLocation@2x.png */,
 				0734D3A91B3D71D80040EA6B /* logo_crumble_white@2x.png */,
 				0760F96D1B42EAB500C5A495 /* add_user_filled@2x.png */,
@@ -457,6 +460,7 @@
 				0705CFB91B339A8100A71559 /* placeholder@2x.png in Resources */,
 				076C89BE1B32A66A0012E15D /* Main.storyboard in Resources */,
 				076C89C31B32A66A0012E15D /* LaunchScreen.xib in Resources */,
+				F5A6DD8B1B46783C0023F2E2 /* crumb.png in Resources */,
 				07B41C011B44149900F53B10 /* default@2x.png in Resources */,
 				0734D3AA1B3D71D80040EA6B /* logo_crumble_white@2x.png in Resources */,
 				076C89C01B32A66A0012E15D /* Images.xcassets in Resources */,

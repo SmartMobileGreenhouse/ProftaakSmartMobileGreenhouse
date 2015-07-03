@@ -187,6 +187,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 //MOGELIJKE REMOVE BUTTON MAKEN OID
                 //annotationView?.animatesDrop = true
                 annotationView?.animatesDrop = false
+                annotationView?.image = UIImage(named: "crumb.png")
                 
                 var button = UIButton.buttonWithType(.Custom) as! UIButton
                 button.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
